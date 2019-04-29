@@ -48,16 +48,77 @@ func showList(node *ListNode) {
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	return nil
+	var result, tempResult *ListNode
+	flag := 0
+	temp1, temp2 := l1, l2
+	for ; temp1 != nil && temp2 != nil; temp1, temp2 = temp1.Next, temp2.Next {
+		var val ListNode
+		val.Val = temp1.Val + temp2.Val
+		if flag == 1 {
+			val.Val += 1
+		}
+		if val.Val >= 10 {
+			flag = 1
+			val.Val -= 10
+		} else {
+			flag = 0
+		}
+
+		if result == nil {
+			result = &val
+			tempResult = result
+		} else {
+			tempResult.Next = &val
+			tempResult = tempResult.Next
+		}
+	}
+	for ; temp1 != nil; temp1 = temp1.Next {
+		var val ListNode
+		val.Val = temp1.Val
+		if flag == 1 {
+			val.Val += 1
+		}
+		if val.Val >= 10 {
+			flag = 1
+			val.Val -= 10
+		} else {
+			flag = 0
+		}
+		tempResult.Next = &val
+		tempResult = tempResult.Next
+	}
+	for ; temp2 != nil; temp2 = temp2.Next {
+		var val ListNode
+		val.Val = temp2.Val
+		if flag == 1 {
+			val.Val += 1
+		}
+		if val.Val >= 10 {
+			flag = 1
+			val.Val -= 10
+		} else {
+			flag = 0
+		}
+		tempResult.Next = &val
+		tempResult = tempResult.Next
+	}
+
+	if flag == 1 {
+		var val ListNode
+		val.Val = 1
+		tempResult.Next = &val
+	}
+	return result
 }
 
 func main() {
-	firstList := initList([]int{2, 4, 3})
-	secondList := initList([]int{5, 6, 4})
+	firstList := initList([]int{9, 8})
+	secondList := initList([]int{1})
 
 	showList(firstList)
 	showList(secondList)
 
 	result := addTwoNumbers(firstList, secondList)
+	fmt.Println("show result:")
 	showList(result)
 }
