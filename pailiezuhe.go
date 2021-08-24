@@ -21,7 +21,7 @@ func dst2(nums []int, index int, p []int, res *[][]int, used *[]bool) {
 }
 
 func test1() {
-	num := []int{4, 2, 6}
+	num := []int{1, 2, 3}
 	p := make([]int, len(num))
 	res := [][]int{}
 	used := make([]bool, len(num))
@@ -38,7 +38,6 @@ func permutation(S string) []string {
 	for i, s := range S {
 		// 差了第i个字符的剩余字符串往下传，并将得到的结果进行合并
 		tmp := fmt.Sprintf("%s%s", S[:i], S[i+1:])
-		fmt.Println(tmp, i, S, S[:i], S[i+1:])
 		res := permutation(tmp)
 		for _, r := range res {
 			ret = append(ret, fmt.Sprintf("%c%s", s, r))
@@ -49,4 +48,5 @@ func permutation(S string) []string {
 
 func main() {
 	fmt.Println(permutation("123"))
+	test1()
 }
