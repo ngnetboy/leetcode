@@ -111,7 +111,6 @@ func testTryAcquire() {
 			time.Sleep(time.Second * 1)
 		}
 	}()
-
 	time.Sleep(time.Second * 20)
 }
 
