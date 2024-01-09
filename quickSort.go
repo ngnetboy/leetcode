@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func getMiddle(array []int, low, high int) int {
 	temp := array[low]
 	for low < high {
@@ -29,9 +27,9 @@ func quickSort(array []int, low, high int) {
 
 }
 
-func main() {
-	array := []int{6, 10, 8, 9, 2, 19, 4, 2}
-	fmt.Println(array)
-	quickSort(array, 0, len(array)-1)
-	fmt.Println(array)
-}
+// func main() {
+// 	array := []int{6, 10, 8, 9, 2, 19, 4, 2}
+// 	fmt.Println(array)
+// 	quickSort(array, 0, len(array)-1)
+// 	fmt.Println(array)
+// }

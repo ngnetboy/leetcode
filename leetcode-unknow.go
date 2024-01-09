@@ -84,8 +84,8 @@ func GetAll(ctx context.Context, ids []string) (map[string]*Detail, error) {
 	}
 }
 
-func main() {
-	str := []string{"1", "2", "3", "4", "5", "6"}
-	result, _ := GetAll(context.Background(), str)
-	fmt.Println("end", result)
-}
+// func main() {
+// 	str := []string{"1", "2", "3", "4", "5", "6"}
+// 	result, _ := GetAll(context.Background(), str)
+// 	fmt.Println("end", result)
+// }

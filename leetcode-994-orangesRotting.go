@@ -109,10 +109,10 @@ func testCopy(s [][]int) {
 	//fmt.Println(temp, s)
 }
 
-func main() {
-	//s1 := [][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}
-	//s2 := [][]int{{2, 1, 1}, {0, 1, 1}, {1, 0, 1}}
-	s3 := [][]int{{0, 2}}
-	fmt.Println(orangesRotting(s3))
-	//testCopy(s1)
-}
+// func main() {
+// 	//s1 := [][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}
+// 	//s2 := [][]int{{2, 1, 1}, {0, 1, 1}, {1, 0, 1}}
+// 	s3 := [][]int{{0, 2}}
+// 	fmt.Println(orangesRotting(s3))
+// 	//testCopy(s1)
+// }

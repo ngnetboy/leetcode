@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
 
@@ -40,8 +38,8 @@ func towSum2(nums []int, target int) []int {
 	return []int{}
 }
 
-func main() {
-	val := []int{2, 7, 11, 15}
-	result := towSum2(val, 9)
-	fmt.Println(result)
-}
+// func main() {
+// 	val := []int{2, 7, 11, 15}
+// 	result := towSum2(val, 9)
+// 	fmt.Println(result)
+// }

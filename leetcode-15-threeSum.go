@@ -40,6 +40,6 @@ func threeSum(nums []int) [][]int {
 	return result
 }
 
-func main() {
-	fmt.Println(threeSum([]int{-1, 0, 1, 2, -1, -4}))
-}
+// func main() {
+// 	fmt.Println(threeSum([]int{-1, 0, 1, 2, -1, -4}))
+// }

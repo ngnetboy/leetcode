@@ -12,8 +12,8 @@ func reverseString(s []byte) {
 	}
 }
 
-func main() {
-	s := []byte("hell")
-	reverseString(s)
-	fmt.Println(string(s))
-}
+// func main() {
+// 	s := []byte("hell")
+// 	reverseString(s)
+// 	fmt.Println(string(s))
+// }

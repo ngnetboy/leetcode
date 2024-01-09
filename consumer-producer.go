@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 )
 
-func main() {
+func consumerProducer() {
 	ch := make(chan int, 10)
 	var sum int64
 	wgP := sync.WaitGroup{}

@@ -53,7 +53,7 @@ func convert(s string, numRows int) string {
 	return result
 }
 
-func main() {
-	res := convert("A", 1)
-	fmt.Println(res)
-}
+// func main() {
+// 	res := convert("A", 1)
+// 	fmt.Println(res)
+// }

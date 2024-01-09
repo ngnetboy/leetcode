@@ -46,7 +46,7 @@ func permutation(S string) []string {
 	return ret
 }
 
-func main() {
-	fmt.Println(permutation("123"))
-	test1()
-}
+// func main() {
+// 	fmt.Println(permutation("123"))
+// 	test1()
+// }

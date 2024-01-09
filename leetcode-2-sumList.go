@@ -111,14 +111,14 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return result
 }
 
-func main() {
-	firstList := initList([]int{9, 8})
-	secondList := initList([]int{1})
+// func main() {
+// 	firstList := initList([]int{9, 8})
+// 	secondList := initList([]int{1})
 
-	showList(firstList)
-	showList(secondList)
+// 	showList(firstList)
+// 	showList(secondList)
 
-	result := addTwoNumbers(firstList, secondList)
-	fmt.Println("show result:")
-	showList(result)
-}
+// 	result := addTwoNumbers(firstList, secondList)
+// 	fmt.Println("show result:")
+// 	showList(result)
+// }

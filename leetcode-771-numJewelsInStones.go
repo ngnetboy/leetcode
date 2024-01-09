@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func numJewelsInStones(j string, s string) int {
 	result := make(map[int32]int)
 	num := 0
@@ -24,8 +20,8 @@ func numJewelsInStones(j string, s string) int {
 	return num
 }
 
-func main() {
-	j := "aA"
-	s := "aAAbbbb"
-	fmt.Println(numJewelsInStones(j, s))
-}
+// func main() {
+// 	j := "aA"
+// 	s := "aAAbbbb"
+// 	fmt.Println(numJewelsInStones(j, s))
+// }

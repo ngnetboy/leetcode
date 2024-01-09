@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -42,10 +41,10 @@ func reverse(x int) int {
 	return result
 }
 
-func main() {
-	//fmt.Println(reverse(123))
-	fmt.Println(reverse(-123))
-	fmt.Println(reverse(1534236469))
-	fmt.Printf("%f", math.Pow(2, 31)-1)
+// func main() {
+// 	//fmt.Println(reverse(123))
+// 	fmt.Println(reverse(-123))
+// 	fmt.Println(reverse(1534236469))
+// 	fmt.Printf("%f", math.Pow(2, 31)-1)
 
-}
+// }

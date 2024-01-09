@@ -114,6 +114,6 @@ func testTryAcquire() {
 	time.Sleep(time.Second * 20)
 }
 
-func main() {
-	testTryAcquireWait()
-}
+// func main() {
+// 	testTryAcquireWait()
+// }
